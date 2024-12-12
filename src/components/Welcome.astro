@@ -1,3 +1,18 @@
 ---
 
 ---
+
+<button>Click me</button>
+
+<script>
+    import { actions } from 'astro:actions';
+
+    const button = document.querySelector('button');
+    button?.addEventListener('click', async () => {
+        
+        const {data, error} = await actions.getForecast({zip: '90041'});
+        if (!error) console.log(data)
+        else console.log(error)
+
+    });
+    </script>
