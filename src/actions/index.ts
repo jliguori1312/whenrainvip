@@ -1,5 +1,5 @@
 import { defineAction } from 'astro:actions'
-import { object, z } from 'astro:schema'
+import { z } from 'astro:schema'
 
 const getWhenRain = async (lat: number, long: number) => {
     const headers = {
