@@ -27,7 +27,7 @@ const getWhenRain = async (lat: number, long: number) => {
     }
     return {
         willRain: false,
-        when: null
+        when: "none :("
     }
 }
 
